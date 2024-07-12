@@ -1,0 +1,5 @@
+C:\Users\6147957\source\repos\FrameworksExample\FrameworksExample\obj\Debug\net8.0\FrameworksExample.csproj.AssemblyReference.cache
+C:\Users\6147957\source\repos\FrameworksExample\FrameworksExample\obj\Debug\net8.0\FrameworksExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6147957\source\repos\FrameworksExample\FrameworksExample\obj\Debug\net8.0\FrameworksExample.AssemblyInfoInputs.cache
+C:\Users\6147957\source\repos\FrameworksExample\FrameworksExample\obj\Debug\net8.0\FrameworksExample.AssemblyInfo.cs
+C:\Users\6147957\source\repos\FrameworksExample\FrameworksExample\obj\Debug\net8.0\FrameworksExample.csproj.CoreCompileInputs.cache

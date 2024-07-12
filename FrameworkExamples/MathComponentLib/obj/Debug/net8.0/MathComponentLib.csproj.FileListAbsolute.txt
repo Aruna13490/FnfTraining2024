@@ -1,0 +1,11 @@
+C:\New folder\FrameworkExamples\MathComponentLib\bin\Debug\net8.0\MathComponentLib.deps.json
+C:\New folder\FrameworkExamples\MathComponentLib\bin\Debug\net8.0\MathComponentLib.dll
+C:\New folder\FrameworkExamples\MathComponentLib\bin\Debug\net8.0\MathComponentLib.pdb
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\MathComponentLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\MathComponentLib.AssemblyInfoInputs.cache
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\MathComponentLib.AssemblyInfo.cs
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\MathComponentLib.csproj.CoreCompileInputs.cache
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\MathComponentLib.dll
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\refint\MathComponentLib.dll
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\MathComponentLib.pdb
+C:\New folder\FrameworkExamples\MathComponentLib\obj\Debug\net8.0\ref\MathComponentLib.dll

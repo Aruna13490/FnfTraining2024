@@ -1,0 +1,12 @@
+C:\MyTrainings\sampleDllLib\bin\Debug\net8.0\sampleDllLib.deps.json
+C:\MyTrainings\sampleDllLib\bin\Debug\net8.0\sampleDllLib.dll
+C:\MyTrainings\sampleDllLib\bin\Debug\net8.0\sampleDllLib.pdb
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.AssemblyInfoInputs.cache
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.AssemblyInfo.cs
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.csproj.CoreCompileInputs.cache
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.dll
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\refint\sampleDllLib.dll
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.pdb
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\ref\sampleDllLib.dll
+C:\MyTrainings\sampleDllLib\obj\Debug\net8.0\sampleDllLib.csproj.AssemblyReference.cache

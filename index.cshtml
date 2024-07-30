@@ -1,0 +1,158 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Expenses Application</title>
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./lib/jquery/jquery.min.js"> </script>
+    <script>
+        const url = "Expense/AllExpenses"
+        function createRow(expense) {
+            const row = `<tr>
+                            <td>${expense.slNo}</td>
+                            <td>${expense.description}</td>
+                            <td>${expense.date}</td>
+                            <td>${expense.amount}</td>`
+            return row;
+
+        }
+
+        function onGetrecordsSuccess(result) {
+            console.log(result)
+            $("table tbody tr").remove();
+            $.each(result, function (index, value) {
+                const row = createRow(value);
+                $("table tbody").append(row);
+            })
+        }
+        function showExpenses() {
+            $.get(url, onGetrecordsSuccess);
+        }
+        function findByDate() { 
+
+
+        }
+        function findByDesc(){
+            const desc = $("#txtSearch").val();
+            const findUrl = `Expense/Find?description=${desc}`;
+           
+            $.get(findUrl, onGetrecordsSuccess);
+
+        }
+
+        function addExpense() {
+            const url = "Expense/AddExpenses";
+            // let exp = {
+            //    Descripton="Travel",
+            //    amount=8300,
+            //    date=04/03/2023
+
+            // };
+            const description = $('#txtDesc').val();
+            const date = $('#txtDate').val();
+            const amount = $('#txtAmount').val();
+
+
+
+            $.post(url, { description, date, amount }, function (response) {
+                alert("added");
+            });
+        }
+               
+                                     
+
+
+        
+
+        function findByMonth(){
+
+        }
+        function init() {
+            $("#btnShow").click(showExpenses);
+            $("#btnFindByDate").click(findByDate);
+            $("#btnAdd").click(addExpense);
+            $("btnFindByMonth").click(findByMonth);      
+
+        }
+        $(document).ready(init);
+        $(document).ready(function () {
+
+
+            $("section").fadeOut(2000);
+
+            $("section:eq(0)").fadeIn(2000);
+            showExpenses();
+        });
+
+           
+     
+
+    </script>
+</head>
+<body>
+    <nav>
+        <button id="btnShow" class="btn btn-info m-4"> Show Expenses</button>
+        <button id="btnFindByDate" class="btn btn-primary m-4"> Find Expenses by date</button>        
+        <button id="btnFindByMonth" class="btn btn-primary m-4"> Find Expenses by Month</button>
+        <button id="btnAdd" class="btn btn-secondary m-4"> Add Expenses</button>
+        <button id="btnOptions" class="btn btn-warning m-4"> Options</button>
+    </nav>
+   
+   
+
+    <h2>Details of the Expenses</h2>
+    <div class="container-fluid">
+       
+            <div>
+                <input type="search" id="txtSearch" placeholder="Search expense" class="form-control" onchange="findByDesc()" />
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>SL No</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+           
+        </div>
+    </div>
+    <section>
+        <div class="showadding">
+            <form id="addExpenseForm">
+
+                Enter the Description
+                <input type="text" id="txtDesc" />
+
+                Enter the Date
+                <input type="date" id="txtDate" />
+
+                Enter the amount
+                <input type="number" id="txtAmount" />
+
+              @*   <button type="button" id="btnAddExpense">Add</button> *@
+            </form>
+            <form>
+                Find the expense by Date:
+                <input type="text" id="txtsearchDate" />
+                <button type="button" id="btnFindByDate">Find</button>
+            </form>
+            <form>
+                Find the Expense by Month:
+                <input type="text" id="txtsearchMonth" />
+                <button type="button" id="btnFindByMonth">Find</button>
+            </form>
+        </div>
+    </section>
+   
+
+</body>
+</html>
